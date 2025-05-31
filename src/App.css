@@ -1,0 +1,326 @@
+.nav-bar {
+  display: flex;
+  align-items: center;  /* Vertically centers the items in the navbar */
+  justify-content: space-between;  /* Distributes items across the navbar */
+  color: white;
+ 
+   /* Optional: Adds padding to the navbar */
+}
+
+.nav-bar ul {
+  display: flex;  /* Aligns the list items horizontally */
+  padding: 0;      /* Removes default padding from ul */
+ margin-left: 200px;      /* Removes default margin from ul */
+  list-style: none;  /* Removes bullets from the list */
+}
+.nav-bar h1{
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.nav-bar h1:hover{
+  color: #9a031e;
+  cursor: pointer;
+}
+.nav-bar ul li {
+padding: 30px;
+font-size: 20px;
+
+
+}
+.nav-bar ul li:hover{
+  color: #9a031e;
+  cursor: pointer;
+}
+.nav-bar button{
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+  border-width: 4px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 25px;
+  border-color: #9a031e;
+}
+.nav-bar button:hover{
+  background-color: #9a031e;
+  cursor: pointer;
+}
+/* The parent container of the image */
+.description {
+  display: flex;            /* Enables Flexbox */
+  align-items: center;      /* Vertically centers the content */
+  justify-content: center;  /* Horizontally centers the content */
+  height: 100vh;            /* Takes full viewport height */
+  width: 100%;              /* Takes full width of the page */
+  text-align: center; 
+  flex-direction: column;      /* Ensures the text (if any) is centered */
+  margin-top:-100px;
+}
+.description img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;       /* Makes the image circular */
+  object-fit: cover;        /* Ensures the image covers the area without distortion */
+}
+.description h1{
+  color: #9a031e;
+  font-size: 60px;
+}
+.description h2{
+  color: white;
+  font-size: 28px;
+  font-weight: 180;
+  margin-top: -30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  line-height: 1.5;
+}
+.grabCV {
+  display: inline-block; /* Makes the link behave like a button */
+  background-image: linear-gradient(to right, #9a031e, black);
+  width: 200px;
+  height: 60px;
+  line-height: 60px; /* Center text vertically */
+  text-align: center; /* Center text horizontally */
+  border-radius: 50px;
+  border: 2px solid transparent;
+  color: white;
+  text-decoration: none; /* Removes underline */
+  transition: border-color 0.3s ease;
+}
+
+.grabCV:hover {
+  border-color: white;
+  cursor: pointer;
+}
+.education {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Equal space around the child elements */
+  align-items: center; /* Aligns the items vertically in the container */
+  gap: 20px; /* Adds spacing between the items */
+  padding: 20px; /* Optional: Adds padding around the entire education container */
+}
+
+.higher {
+  width: 20%; /* Adjust to make them fit within the container */
+  height: 200px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 10px;
+  border: 2px solid #9a031e;
+  justify-content: space-around;
+  text-align: center; /* Center-aligns text within each box */
+ /* Optional: Add background for better visibility */
+}
+.higher:hover{
+  background: linear-gradient(to bottom, black, #9a031e);
+  cursor: pointer;
+}
+.higher h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.higher p {
+  color: antiquewhite;
+}
+
+.edu {
+  margin-top: 100px;
+  color: #9a031e;
+  text-align: center;
+  font-size: 60px;
+}
+#Skills{
+  margin-top: 100px;
+  color: #9a031e;
+  text-align: center;
+  font-size: 60px;
+}
+.Technical img{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+.Skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Equal space around the child elements */
+  align-items: center; /* Aligns the items vertically in the container */
+  gap: 20px; /* Adds spacing between the items */
+  padding: 20px; /* Optional: Adds padding around the entire education container */
+}
+.Technical {
+  width: 600px; /* Adjust the width to ensure it is spacious enough for the content */
+ /* Let the height adjust based on content */
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 10px;
+  border: 2px solid #9a031e;
+  display: flex;
+  flex-direction: column; /* Align the heading and images in a vertical stack */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center;
+  padding: 20px;
+}
+
+.Technical h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px; /* Adds space between the heading and the images */
+}
+
+.Technical img {
+  width: 60px; /* Adjust the width of each image */
+  height: 60px; /* Adjust the height of each image */
+  margin: 5px; /* Adds spacing between the images */
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+}
+
+.Technical .image-row {
+  display: flex;
+  justify-content: center; /* Centers the images horizontally */
+  flex-wrap: wrap; /* Allows images to wrap to the next line if there isn't enough space */
+ /* Adds spacing between images */
+}
+.Technical:hover{
+  background: linear-gradient(to bottom, black, #9a031e);
+  cursor: pointer;
+}
+#Projects{
+  margin-top: 100px;
+  color: #9a031e;
+  text-align: center;
+  font-size: 60px;
+}
+.project{
+  width: 300px; /* Adjust the width to ensure it is spacious enough for the content */
+  margin-top: 50px;
+  justify-content: space-around;
+  border-radius: 10px;
+  border: 2px solid #9a031e;
+  display: flex;
+  flex-direction: column; /* Align the heading and images in a vertical stack */
+  align-items: center; /* Center items horizontally */
+  text-align: center;
+  padding: 20px;
+}
+
+.project img{
+  width: 320px;
+  height: 200px;
+}
+
+.project h2{
+  color: antiquewhite;
+  font-weight: 200;
+}
+
+.project p{
+  color: white;
+  font-size: 12px;
+  font-weight: 100;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+.project:hover{
+  background: linear-gradient(to bottom, black, #9a031e);
+  cursor: pointer;
+}
+
+.Projects{
+  display: flex;
+  justify-content: space-between; /* Adds equal space between the images */
+  margin-left: 100px;
+  margin-right: 100px;
+  flex-wrap: wrap; /* Ensures items wrap if there's not enough space */
+}
+#contact{
+  margin-top: 200px;
+  color: #9a031e;
+  text-align: center;
+  font-size: 60px;
+
+}
+/* Outer contact container */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: black;
+  padding: 20px;
+  border-color: #9a031e;
+}
+
+/* Form styling */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Equal spacing between elements */
+  padding: 30px; /* Padding inside the form */
+   margin-top: -250px;
+  width: 500px;
+  max-width: 500px; /* Limit form size */
+  background: black; /* Keep form black */
+  box-sizing: border-box; /* Prevent padding from overflowing */
+}
+.labels{
+  padding: 20px;
+}
+
+/* Label styling */
+.contact label {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 10px;
+ 
+}
+
+/* Input and Textarea fields */
+.contact input,
+.contact textarea {
+  width: 100%; /* Make inputs take full form width */
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #333;
+  box-sizing: border-box; /* Avoid padding overflow */
+  height:50px;
+}
+
+.contact textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* Submit button styling */
+.contact button {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #9a031e;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact button:hover {
+  background: linear-gradient(to bottom, black, #9a031e);
+  cursor: pointer;
+}
